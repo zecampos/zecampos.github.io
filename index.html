@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jose Guilherme Campos - Software Developer</title>
+  <meta name="description" content="Desenvolvedor de software com mais de 9 anos de experiência em Front-End, Mobile e APIs. Especialista em React, React Native, Node.js, Python e TypeScript.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__container">
+      <a href="#" class="header__logo">JC</a>
+      <nav class="header__nav" id="nav">
+        <a href="#home" class="header__link active" data-i18n="nav.home">Home</a>
+        <a href="#services" class="header__link" data-i18n="nav.services">Serviços</a>
+        <a href="#works" class="header__link" data-i18n="nav.works">Projetos</a>
+        <a href="#experience" class="header__link" data-i18n="nav.experience">Experiência</a>
+        <a href="#skills" class="header__link">Skills</a>
+        <a href="#contact" class="header__link" data-i18n="nav.contact">Contato</a>
+      </nav>
+      <div class="header__right">
+        <!-- Language Switcher -->
+        <div class="lang-switcher" id="lang-switcher">
+          <button class="lang-switcher__btn" id="lang-btn" aria-label="Idioma">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <span id="current-lang">PT</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="lang-switcher__dropdown" id="lang-dropdown">
+            <button class="lang-switcher__option active" data-lang="pt">
+              <span class="lang-switcher__flag">🇧🇷</span> Português
+            </button>
+            <button class="lang-switcher__option" data-lang="en">
+              <span class="lang-switcher__flag">🇺🇸</span> English
+            </button>
+            <button class="lang-switcher__option" data-lang="es">
+              <span class="lang-switcher__flag">🇪🇸</span> Español
+            </button>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn--primary header__cta" data-i18n="nav.cta">Fale Comigo</a>
+      </div>
+      <button class="header__menu-btn" id="menu-btn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <!-- Animated background blobs -->
+    <div class="hero__bg">
+      <div class="hero__blob hero__blob--1"></div>
+      <div class="hero__blob hero__blob--2"></div>
+      <div class="hero__blob hero__blob--3"></div>
+    </div>
+
+    <div class="container hero__container">
+      <div class="hero__content">
+        <p class="hero__greeting">
+          <span class="hero__hi" id="hero-hi"></span>
+          <span class="hero__cursor">|</span>
+        </p>
+        <h1 class="hero__title">Software Developer +<br><span class="text-gradient">Mobile Specialist</span></h1>
+        <p class="hero__description" data-i18n="hero.description">Desenvolvedor de software com mais de 9 anos de experiência em Front-End, Mobile e APIs. Especialista em criar soluções completas — do app ao servidor — para startups e grandes empresas.</p>
+        <div class="hero__actions">
+          <a href="assets/cv_jose_campos.pdf" download class="btn btn--primary" data-i18n="hero.downloadCv">Download CV</a>
+          <a href="#works" class="btn btn--outline" data-i18n="hero.myProjects">Meus Projetos</a>
+        </div>
+      </div>
+      <div class="hero__image">
+        <div class="hero__image-frame">
+          <div class="hero__frame-corner hero__frame-corner--tl"></div>
+          <div class="hero__frame-corner hero__frame-corner--tr"></div>
+          <div class="hero__frame-corner hero__frame-corner--bl"></div>
+          <div class="hero__frame-corner hero__frame-corner--br"></div>
+          <div class="hero__image-wrapper">
+            <img src="assets/img/profile.jpg" alt="Jose Guilherme Campos" loading="eager">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="container" style="position:relative;z-index:1">
+      <div class="stats">
+        <div class="stats__item">
+          <span class="stats__number" data-count="9">0</span><span class="stats__plus">+</span>
+          <p class="stats__label" data-i18n="stats.experience">Anos de<br>Experiência</p>
+        </div>
+        <div class="stats__item">
+          <span class="stats__number" data-count="30">0</span><span class="stats__plus">+</span>
+          <p class="stats__label" data-i18n="stats.projects">Projetos<br>Entregues</p>
+        </div>
+        <div class="stats__item">
+          <span class="stats__number" data-count="7">0</span><span class="stats__plus">+</span>
+          <p class="stats__label" data-i18n="stats.companies">Empresas<br>Atendidas</p>
+        </div>
+        <div class="stats__item">
+          <span class="stats__number" data-count="6">0</span><span class="stats__plus">+</span>
+          <p class="stats__label" data-i18n="stats.reactNative">Anos em<br>React Native</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="container">
+      <h2 class="section__title" data-i18n="services.title" data-i18n-html="true">Meus <span class="text-gradient">Serviços</span></h2>
+      <p class="section__subtitle" data-i18n="services.subtitle">Soluções completas em desenvolvimento de software para web, mobile e backend.</p>
+
+      <div class="services__grid">
+        <div class="service-card service-card--active">
+          <div class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          </div>
+          <h3 class="service-card__title" data-i18n="services.mobile.title">Desenvolvimento Mobile</h3>
+          <p class="service-card__text" data-i18n="services.mobile.text">Apps iOS e Android com React Native e Expo. Publicação nas lojas, performance otimizada e experiência nativa.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3 class="service-card__title" data-i18n="services.web.title">Desenvolvimento Web</h3>
+          <p class="service-card__text" data-i18n="services.web.text">SPAs e aplicações web modernas com React, Next.js, Angular e Vue.js. Interfaces responsivas e performáticas.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-4V6"/><path d="M14 10l7.5-7.5"/><path d="M21 12a9 9 0 1 1-3-6.7"/></svg>
+          </div>
+          <h3 class="service-card__title" data-i18n="services.api.title">APIs & Backend</h3>
+          <p class="service-card__text" data-i18n="services.api.text">APIs robustas com Node.js, NestJS, FastAPI e Go. Arquitetura escalável, microsserviços e integração com IA.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3 class="service-card__title" data-i18n="services.devops.title">DevOps & Deploy</h3>
+          <p class="service-card__text" data-i18n="services.devops.text">Docker, CI/CD, configuração de servidores. Deploy em AWS, GCP, Azure, Digital Ocean e plataformas serverless.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Works -->
+  <section class="section section--dark" id="works">
+    <div class="container">
+      <h2 class="section__title" data-i18n="works.title" data-i18n-html="true">Projetos <span class="text-gradient">Recentes</span></h2>
+      <p class="section__subtitle" data-i18n="works.subtitle">Alguns dos projetos em que trabalhei recentemente.</p>
+
+      <div class="works__filter">
+        <button class="works__filter-btn active" data-filter="all" data-i18n="works.all">Todos</button>
+        <button class="works__filter-btn" data-filter="mobile">Mobile</button>
+        <button class="works__filter-btn" data-filter="web">Web</button>
+        <button class="works__filter-btn" data-filter="api">API</button>
+      </div>
+
+      <div class="works__grid">
+        <div class="work-card" data-category="mobile">
+          <div class="work-card__content">
+            <span class="work-card__tag">Mobile</span>
+            <h3 class="work-card__title">Banco do Brasil Seguros</h3>
+            <p class="work-card__text" data-i18n="works.bb.text">App de seguros com React Native para o Banco do Brasil. Aumento significativo na venda de novos seguros e integração com WhatsApp via microsserviços em Go e Node.js.</p>
+            <div class="work-card__tech">
+              <span>React Native</span><span>Go</span><span>Node.js</span><span>TypeScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="work-card" data-category="web api">
+          <div class="work-card__content">
+            <span class="work-card__tag">Full Stack</span>
+            <h3 class="work-card__title">EnglishCraft</h3>
+            <p class="work-card__text" data-i18n="works.englishcraft.text">Plataforma de aprendizado de inglês com IPA, flashcards interativos e sistema freemium. App cross-platform + API escalável.</p>
+            <div class="work-card__tech">
+              <span>React Native</span><span>NestJS</span><span>PostgreSQL</span><span>Expo</span>
+            </div>
+            <a href="https://englishcraft.pro" target="_blank" rel="noopener" class="work-card__link" data-i18n="works.visit">Visitar &rarr;</a>
+          </div>
+        </div>
+
+        <div class="work-card" data-category="api">
+          <div class="work-card__content">
+            <span class="work-card__tag">API & IA</span>
+            <h3 class="work-card__title">AI Document Chat</h3>
+            <p class="work-card__text" data-i18n="works.aichat.text">API de chat com documentos usando IA. Upload de PDF/DOCX/áudio, busca semântica com RAG e integração com Google Gemini e Ollama.</p>
+            <div class="work-card__tech">
+              <span>Python</span><span>FastAPI</span><span>Qdrant</span><span>Docker</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="work-card" data-category="mobile">
+          <div class="work-card__content">
+            <span class="work-card__tag">Mobile</span>
+            <h3 class="work-card__title">Celler Bank</h3>
+            <p class="work-card__text" data-i18n="works.celler.text">App bancário com React Native para fintech. APIs com Azure Functions e camadas de segurança contra ataques MITM.</p>
+            <div class="work-card__tech">
+              <span>React Native</span><span>Node.js</span><span>Go</span><span>Azure</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="work-card" data-category="web">
+          <div class="work-card__content">
+            <span class="work-card__tag">Web</span>
+            <h3 class="work-card__title" data-i18n="works.chatbots.title">Chatbots Corporativos</h3>
+            <p class="work-card__text" data-i18n="works.chatbots.text">Chatbots para grandes empresas como Americanas e Canon. Otimização de atendimento ao cliente com integração via Ruby on Rails.</p>
+            <div class="work-card__tech">
+              <span>AIML</span><span>React</span><span>Ruby on Rails</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="work-card" data-category="mobile web">
+          <div class="work-card__content">
+            <span class="work-card__tag">Fintech</span>
+            <h3 class="work-card__title">PagPop</h3>
+            <p class="work-card__text" data-i18n="works.pagpop.text">App e portal web para fintech. Acesso a extratos e transações bancárias via web com React e Vue.js + app React Native.</p>
+            <div class="work-card__tech">
+              <span>React Native</span><span>React</span><span>Vue.js</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Education -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="timeline__grid">
+        <div>
+          <h2 class="section__title section__title--left" data-i18n="experience.title" data-i18n-html="true">Minha <span class="text-gradient">Experiência</span></h2>
+          <div class="timeline">
+            <div class="timeline__item">
+              <span class="timeline__date" data-i18n="experience.freelance.date">2024 - Presente</span>
+              <h3 class="timeline__title">Freelance Developer</h3>
+              <p class="timeline__company">AI & Full Stack Projects</p>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__date">02/2022 - 12/2025</span>
+              <h3 class="timeline__title">Mobile Developer</h3>
+              <p class="timeline__company" data-i18n="experience.ilia.company">Ília, Brasília - Remoto</p>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__date">07/2021 - 01/2022</span>
+              <h3 class="timeline__title">Software Developer</h3>
+              <p class="timeline__company" data-i18n="experience.celler.company">Celler, São Paulo - Remoto</p>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__date">01/2021 - 07/2021</span>
+              <h3 class="timeline__title">Software Developer</h3>
+              <p class="timeline__company" data-i18n="experience.wt9.company">WT9, São Paulo - Remoto</p>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__date">08/2020 - 01/2021</span>
+              <h3 class="timeline__title">Software Developer</h3>
+              <p class="timeline__company" data-i18n="experience.nama.company">Nama, São Paulo - Remoto</p>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__date">12/2018 - 07/2021</span>
+              <h3 class="timeline__title">Software Developer</h3>
+              <p class="timeline__company" data-i18n="experience.duodev.company">DuoDev, São Paulo - Remoto</p>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__date">09/2017 - 12/2018</span>
+              <h3 class="timeline__title">Software Developer</h3>
+              <p class="timeline__company">PagPop, Ribeirão Preto</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="section__title section__title--left" data-i18n="education.title" data-i18n-html="true">Minha <span class="text-gradient">Formação</span></h2>
+          <div class="timeline">
+            <div class="timeline__item">
+              <span class="timeline__date">2016</span>
+              <h3 class="timeline__title" data-i18n="education.ads">Análise e Desenvolvimento de Sistemas</h3>
+              <p class="timeline__company">Estácio, São Paulo</p>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__date">2008 - 2012</span>
+              <h3 class="timeline__title" data-i18n="education.admin">Administração de Empresas</h3>
+              <p class="timeline__company">Centro Universitário Moura Lacerda, São Paulo</p>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__date">2024</span>
+              <h3 class="timeline__title">FastAPI Development Course</h3>
+              <p class="timeline__company">Dunossauro</p>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__date">2024</span>
+              <h3 class="timeline__title">AI/ML Integration with Python APIs</h3>
+              <p class="timeline__company" data-i18n="education.certification">Certificação</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section section--dark" id="skills">
+    <div class="container">
+      <h2 class="section__title" data-i18n="skills.title" data-i18n-html="true">Minhas <span class="text-gradient">Skills</span></h2>
+      <p class="section__subtitle" data-i18n="skills.subtitle">Tecnologias e ferramentas que utilizo no dia a dia.</p>
+
+      <div class="skills__grid">
+        <div class="skill-card">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M12 10.11c1.03 0 1.87.84 1.87 1.89 0 1-.84 1.85-1.87 1.85S10.13 13 10.13 12c0-1.05.84-1.89 1.87-1.89M7.37 20c.63.38 2.01-.2 3.6-1.7-.52-.59-1.03-1.23-1.51-1.9a22.7 22.7 0 0 1-2.4-.36c-.51 2.14-.32 3.61.31 3.96m.71-5.74-.29-.51c-.11.29-.22.58-.29.86.27.06.57.11.88.16l-.3-.51m6.54-.76.81-1.5-.81-1.5c-.3-.53-.62-1-.91-1.47C13.17 9 12.6 9 12 9c-.6 0-1.17 0-1.71.03-.29.47-.61.94-.91 1.47L8.57 12l.81 1.5c.3.53.62 1 .91 1.47.54.03 1.11.03 1.71.03.6 0 1.17 0 1.71-.03.29-.47.61-.94.91-1.47M12 6.78c-.19.22-.39.45-.59.72h1.18c-.2-.27-.4-.5-.59-.72m0 10.44c.19-.22.39-.45.59-.72h-1.18c.2.27.4.5.59.72M16.62 4c-.62-.38-2 .2-3.59 1.7.52.59 1.03 1.23 1.51 1.9.82.08 1.63.2 2.4.36.51-2.14.32-3.61-.32-3.96m-.7 5.74.29.51c.11-.29.22-.58.29-.86-.27-.06-.57-.11-.88-.16l.3.51m1.45-7.05c1.47.84 1.63 3.05 1.01 5.63 2.54.75 4.37 1.99 4.37 3.68 0 1.69-1.83 2.93-4.37 3.68.62 2.58.46 4.79-1.01 5.63-1.46.84-3.45-.12-5.37-1.95-1.92 1.83-3.91 2.79-5.38 1.95-1.46-.84-1.62-3.05-1-5.63-2.54-.75-4.37-1.99-4.37-3.68 0-1.69 1.83-2.93 4.37-3.68-.62-2.58-.46-4.79 1-5.63 1.47-.84 3.46.12 5.38 1.95 1.92-1.83 3.91-2.79 5.37-1.95M17.08 12c.34.75.64 1.5.89 2.26 2.1-.63 3.28-1.53 3.28-2.26 0-.73-1.18-1.63-3.28-2.26-.25.76-.55 1.51-.89 2.26M6.92 12c-.34-.75-.64-1.5-.89-2.26-2.1.63-3.28 1.53-3.28 2.26 0 .73 1.18 1.63 3.28 2.26.25-.76.55-1.51.89-2.26m9 2.26-.3.51c.31-.05.61-.1.88-.16-.07-.28-.18-.57-.29-.86l-.29.51m-2.89 4.04c1.59 1.5 2.97 2.08 3.59 1.7.64-.35.83-1.82.32-3.96-.77.16-1.58.28-2.4.36-.48.67-.99 1.31-1.51 1.9M8.08 9.74l.3-.51c-.31.05-.61.1-.88.16.07.28.18.57.29.86l.29-.51m2.89-4.04C9.38 4.2 8 3.62 7.37 4c-.63.35-.82 1.82-.31 3.96a22.7 22.7 0 0 0 2.4-.36c.48-.67.99-1.31 1.51-1.9z"/></svg>
+          </div>
+          <span class="skill-card__name">React</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M12 10.11c1.03 0 1.87.84 1.87 1.89 0 1-.84 1.85-1.87 1.85S10.13 13 10.13 12c0-1.05.84-1.89 1.87-1.89M7.37 20c.63.38 2.01-.2 3.6-1.7-.52-.59-1.03-1.23-1.51-1.9a22.7 22.7 0 0 1-2.4-.36c-.51 2.14-.32 3.61.31 3.96m.71-5.74-.29-.51c-.11.29-.22.58-.29.86.27.06.57.11.88.16l-.3-.51m6.54-.76.81-1.5-.81-1.5c-.3-.53-.62-1-.91-1.47C13.17 9 12.6 9 12 9c-.6 0-1.17 0-1.71.03-.29.47-.61.94-.91 1.47L8.57 12l.81 1.5c.3.53.62 1 .91 1.47.54.03 1.11.03 1.71.03.6 0 1.17 0 1.71-.03.29-.47.61-.94.91-1.47M12 6.78c-.19.22-.39.45-.59.72h1.18c-.2-.27-.4-.5-.59-.72m0 10.44c.19-.22.39-.45.59-.72h-1.18c.2.27.4.5.59.72M16.62 4c-.62-.38-2 .2-3.59 1.7.52.59 1.03 1.23 1.51 1.9.82.08 1.63.2 2.4.36.51-2.14.32-3.61-.32-3.96m-.7 5.74.29.51c.11-.29.22-.58.29-.86-.27-.06-.57-.11-.88-.16l.3.51m1.45-7.05c1.47.84 1.63 3.05 1.01 5.63 2.54.75 4.37 1.99 4.37 3.68 0 1.69-1.83 2.93-4.37 3.68.62 2.58.46 4.79-1.01 5.63-1.46.84-3.45-.12-5.37-1.95-1.92 1.83-3.91 2.79-5.38 1.95-1.46-.84-1.62-3.05-1-5.63-2.54-.75-4.37-1.99-4.37-3.68 0-1.69 1.83-2.93 4.37-3.68-.62-2.58-.46-4.79 1-5.63 1.47-.84 3.46.12 5.38 1.95 1.92-1.83 3.91-2.79 5.37-1.95M17.08 12c.34.75.64 1.5.89 2.26 2.1-.63 3.28-1.53 3.28-2.26 0-.73-1.18-1.63-3.28-2.26-.25.76-.55 1.51-.89 2.26M6.92 12c-.34-.75-.64-1.5-.89-2.26-2.1.63-3.28 1.53-3.28 2.26 0 .73 1.18 1.63 3.28 2.26.25-.76.55-1.51.89-2.26m9 2.26-.3.51c.31-.05.61-.1.88-.16-.07-.28-.18-.57-.29-.86l-.29.51m-2.89 4.04c1.59 1.5 2.97 2.08 3.59 1.7.64-.35.83-1.82.32-3.96-.77.16-1.58.28-2.4.36-.48.67-.99 1.31-1.51 1.9M8.08 9.74l.3-.51c-.31.05-.61.1-.88.16.07.28.18.57.29.86l.29-.51m2.89-4.04C9.38 4.2 8 3.62 7.37 4c-.63.35-.82 1.82-.31 3.96a22.7 22.7 0 0 0 2.4-.36c.48-.67.99-1.31 1.51-1.9z"/></svg>
+          </div>
+          <span class="skill-card__name">React Native</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M3 3h18v18H3V3m10.71 14.86c.5.98 1.51 1.73 3.09 1.73 1.6 0 2.8-.83 2.8-2.36 0-1.41-.81-2.04-2.25-2.66l-.42-.18c-.73-.31-1.04-.52-1.04-1.02 0-.41.31-.73.81-.73.48 0 .8.21 1.09.73l1.31-.87c-.55-.96-1.33-1.33-2.4-1.33-1.51 0-2.48.96-2.48 2.23 0 1.38.81 2.03 2.03 2.55l.42.18c.78.34 1.24.55 1.24 1.13 0 .48-.45.83-1.15.83-.83 0-1.31-.43-1.67-1.03l-1.38.8M9.33 17.86c.37.74.98 1.73 2.15 1.73 1.24 0 2.02-.77 2.02-2.4V11.1H11.9v6.07c0 .74-.32.88-.63.88-.62 0-.88-.54-1.05-.89l-1.38.8-.01-.1z"/></svg>
+          </div>
+          <span class="skill-card__name">JavaScript</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M3 3h18v18H3V3m10.71 14.86c.5.98 1.51 1.73 3.09 1.73 1.6 0 2.8-.83 2.8-2.36 0-1.41-.81-2.04-2.25-2.66l-.42-.18c-.73-.31-1.04-.52-1.04-1.02 0-.41.31-.73.81-.73.48 0 .8.21 1.09.73l1.31-.87c-.55-.96-1.33-1.33-2.4-1.33-1.51 0-2.48.96-2.48 2.23 0 1.38.81 2.03 2.03 2.55l.42.18c.78.34 1.24.55 1.24 1.13 0 .48-.45.83-1.15.83-.83 0-1.31-.43-1.67-1.03l-1.38.8M9.33 17.86c.37.74.98 1.73 2.15 1.73 1.24 0 2.02-.77 2.02-2.4V11.1H11.9v6.07c0 .74-.32.88-.63.88-.62 0-.88-.54-1.05-.89l-1.38.8-.01-.1z"/></svg>
+          </div>
+          <span class="skill-card__name">TypeScript</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M12 1.85c-.27 0-.55.07-.78.2L3.78 6.35C3.3 6.63 3 7.15 3 7.71v8.58c0 .56.3 1.08.78 1.36l7.44 4.3c.23.13.5.2.78.2.27 0 .55-.07.78-.2l7.44-4.3c.48-.28.78-.8.78-1.36V7.71c0-.56-.3-1.08-.78-1.36l-7.44-4.3c-.23-.13-.5-.2-.78-.2M12 4.07l6.78 3.93L12 11.93 5.22 8l6.78-3.93M4.5 9.42l6.75 3.9v7.78l-6.75-3.9V9.42m15 0v7.78l-6.75 3.9v-7.78l6.75-3.9z"/></svg>
+          </div>
+          <span class="skill-card__name">Node.js</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M9.585 11.692h4.328s2.432.039 2.432-2.35V5.391S16.714 3 11.766 3C6.818 3 6.976 5.109 6.976 5.109l.006 2.183h4.882v.655H5.406S3 7.717 3 12.77s2.1 4.867 2.1 4.867h1.252v-2.342s-.067-2.1 2.07-2.1h3.56m-2.117-5.588a.68.68 0 1 1 0-1.36.68.68 0 0 1 0 1.36z"/><path d="M14.415 12.308h-4.328s-2.432-.039-2.432 2.35v3.951S7.286 21 12.234 21c4.948 0 4.79-2.109 4.79-2.109l-.006-2.183h-4.882v-.655h6.458S21 16.283 21 11.23s-2.1-4.867-2.1-4.867h-1.252v2.342s.067 2.1-2.07 2.1h-3.56m2.117 5.588a.68.68 0 1 1 0 1.36.68.68 0 0 1 0-1.36z"/></svg>
+          </div>
+          <span class="skill-card__name">Python</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M1.811 10.231c-.047 0-.058-.023-.035-.059l.246-.315c.023-.035.081-.058.128-.058h4.172c.046 0 .058.035.035.07l-.199.303c-.023.036-.082.07-.117.07zM.047 11.306c-.047 0-.059-.023-.035-.058l.245-.316c.023-.035.082-.058.129-.058h5.328c.047 0 .07.035.058.07l-.093.28c-.012.047-.058.07-.105.07zm2.828 1.075c-.047 0-.059-.035-.035-.07l.163-.292c.023-.035.07-.07.117-.07h2.337c.047 0 .07.035.07.082l-.023.28c0 .047-.047.082-.082.082zM17.803 10.22l-2.645.645c-.233.058-.245.07-.44-.163-.233-.28-.408-.467-.737-.643-.985-.514-1.938-.362-2.81.21-.997.667-1.508 1.647-1.496 2.867.012 1.22.856 2.228 2.063 2.392 1.044.14 1.926-.268 2.645-1.056.14-.175.268-.362.42-.573H11.88c-.327 0-.408-.199-.292-.468.21-.503.596-1.345.82-1.763.046-.093.163-.245.373-.245h5.644c-.035.467-.035.934-.117 1.39-.21 1.18-.678 2.252-1.402 3.21-1.181 1.565-2.703 2.554-4.6 2.938-1.555.316-3.04.187-4.418-.596-1.251-.71-2.042-1.763-2.38-3.152-.397-1.635-.188-3.164.584-4.588C7.153 7.932 8.695 6.82 10.585 6.353c1.497-.362 2.947-.28 4.313.468 .9.491 1.578 1.205 2.063 2.111.117.187.082.28-.152.339z"/></svg>
+          </div>
+          <span class="skill-card__name">Go</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M21.8 13.4l-1-1.8-1.1-2-3.3-5.7c-.1-.2-.3-.3-.5-.3s-.4.1-.5.3l-1.6 2.8H10.2L8.6 3.9c-.1-.2-.3-.3-.5-.3s-.4.1-.5.3L4.2 9.6l-1.1 2-1 1.8c-.1.2-.1.4 0 .6.1.2.3.3.5.3h8.4 1h8.3c.2 0 .4-.1.5-.3.1-.2.1-.4 0-.6zM8.1 6.4l1.8 3.1H6.3l1.8-3.1zm7.8 0l1.8 3.1h-3.6l1.8-3.1zm-8.7 7l1.4-2.4.7-1.2h5.4l.7 1.2 1.4 2.4H7.2z"/></svg>
+          </div>
+          <span class="skill-card__name">NestJS</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.92 3.445 1.574 3.445 2.583 0 .98-.84 1.545-2.354 1.545-1.875 0-4.965-.921-6.99-2.109l-.9 5.555C5.175 22.99 8.385 24 11.714 24c2.641 0 4.843-.624 6.328-1.813 1.664-1.305 2.525-3.236 2.525-5.732 0-4.128-2.524-5.851-6.591-7.305z"/></svg>
+          </div>
+          <span class="skill-card__name">Swift</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A73.49 73.49 0 0 1 10.845 19c-.235-1.568.064-3.31 1.138-4.762.116-.155.353-.076.387.103.235 1.187.896 2.39 1.958 3.195.14.103.258.2.388.303-.04-.18-.073-.36-.108-.532-.21-1.007-.296-2.093.05-3.07.086-.234.418-.206.464.04.294 1.59 1.196 2.705 2.296 3.614.087-.375.152-.713.183-.97.14-1.186-.075-2.412-.432-3.546-.026-.082.047-.156.126-.118 1.393.677 2.42 1.88 2.898 3.298z"/></svg>
+          </div>
+          <span class="skill-card__name">FastAPI</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M12.504 0c-.155 0-.315.008-.48.021-4.226.333-3.105 4.807-3.17 6.298-.076 1.092-.3 1.953-1.05 3.02-.885 1.051-2.127 2.75-2.716 4.521-.278.832-.41 1.684-.287 2.489a.424.424 0 0 0-.11.135c-.26.268-.45.6-.663.839-.199.199-.485.267-.797.4-.313.136-.658.269-.864.68a.56.56 0 0 0 .005.54.524.524 0 0 0 .206.19c.39.206.674-.045.87-.148.195-.104.39-.234.63-.301.145-.04.333-.04.473-.02-.06.149-.116.3-.129.46-.014.16.046.263.137.38.08.098.233.132.351.087.12-.044.218-.146.31-.293.05-.08.116-.225.154-.3.107.017.254-.021.371-.1.116-.078.178-.22.167-.32 0-.02-.005-.035-.01-.048.237-.018.487-.085.736-.32a.395.395 0 0 0 .102-.4.492.492 0 0 0-.31-.286c-.166-.06-.36-.028-.517.04.106-.29.068-.574-.074-.78a.498.498 0 0 0-.254-.198c.217-.637.477-1.32.745-1.937.387-.89.872-1.826 1.467-2.399.239-.23.537-.446.823-.576 1.174-.528 2.46-.327 3.754-.068.578.115 1.164.218 1.773.191.308-.014.614-.059.938-.185a.72.72 0 0 0 .238-.138c.066.023.133.042.197.062.27.079.465.034.593-.055.127-.087.22-.223.241-.424.01-.101-.011-.187-.039-.27a.565.565 0 0 0 .166-.183c.064-.13.09-.295.013-.456-.075-.16-.24-.247-.39-.244l-.046.004a1.1 1.1 0 0 0-.17-.33.613.613 0 0 0-.421-.22c.042-.09.067-.19.066-.295-.003-.327-.247-.606-.546-.625-.274-.018-.555.136-.68.37-.105.2-.096.443-.008.634a1.34 1.34 0 0 0-.502-.098c-.318.01-.61.155-.72.47-.103.3.066.625.345.789-.092.05-.18.117-.243.196-.117.147-.142.36-.07.512.068.148.233.27.404.228.16-.04.287-.137.416-.25.217-.19.404-.408.663-.47-.126.396-.015.788.187 1.044.104.13.235.229.397.252a.525.525 0 0 0 .383-.088.453.453 0 0 0-.043-.634.342.342 0 0 0-.16-.059c-.11-.013-.264.024-.341.155-.082.14-.044.259.033.322z"/><path d="M12.002 23.999c2.965 0 5.808-1.046 7.998-2.962a11.98 11.98 0 0 0 3.762-6.35 11.834 11.834 0 0 0-.45-6.72 12.07 12.07 0 0 0-4.115-5.44A12.124 12.124 0 0 0 12.002 0C5.374 0 0 5.373 0 12c0 6.628 5.374 12 12.002 12z" fill="none"/></svg>
+          </div>
+          <span class="skill-card__name">Docker</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </div>
+          <span class="skill-card__name">Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section__title" data-i18n="contact.title" data-i18n-html="true">Vamos <span class="text-gradient">Trabalhar Juntos?</span></h2>
+      <p class="section__subtitle" data-i18n="contact.subtitle">Entre em contato e vamos conversar sobre seu projeto.</p>
+
+      <div class="contact__grid">
+        <div class="contact__info">
+          <div class="contact__item">
+            <div class="contact__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            </div>
+            <div>
+              <h3>WhatsApp</h3>
+              <a href="https://wa.me/5516988020195" target="_blank" rel="noopener">+55 16 98802-0195</a>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <h3>Email</h3>
+              <a href="mailto:zecampos2015@yahoo.com.br">zecampos2015@yahoo.com.br</a>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h3 data-i18n="contact.location">Localização</h3>
+              <p>Ribeirão Preto, SP - Brasil</p>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </div>
+            <div>
+              <h3>LinkedIn</h3>
+              <a href="https://linkedin.com/in/jose-campos-dev" target="_blank" rel="noopener">jose-campos-dev</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact__form" id="contact-form">
+          <div class="form__group">
+            <input type="text" name="name" data-i18n-placeholder="contact.form.name" placeholder="Seu nome" required>
+          </div>
+          <div class="form__group">
+            <input type="email" name="email" data-i18n-placeholder="contact.form.email" placeholder="Seu email" required>
+          </div>
+          <div class="form__group">
+            <input type="text" name="subject" data-i18n-placeholder="contact.form.subject" placeholder="Assunto">
+          </div>
+          <div class="form__group">
+            <textarea name="message" rows="5" data-i18n-placeholder="contact.form.message" placeholder="Sua mensagem" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full" data-i18n="contact.form.send">Enviar Mensagem</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <a href="#" class="footer__logo">JC</a>
+      <p class="footer__copy" data-i18n="footer.copy">&copy; 2026 Jose Guilherme Campos. Todos os direitos reservados.</p>
+      <div class="footer__social">
+        <a href="https://linkedin.com/in/jose-campos-dev" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:zecampos2015@yahoo.com.br" aria-label="Email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
