@@ -94,12 +94,12 @@
           <p class="stats__label" data-i18n="stats.experience">Anos de<br>Experiência</p>
         </div>
         <div class="stats__item">
-          <span class="stats__number" data-count="30">0</span><span class="stats__plus">+</span>
+          <span class="stats__number" data-count="40">0</span><span class="stats__plus">+</span>
           <p class="stats__label" data-i18n="stats.projects">Projetos<br>Entregues</p>
         </div>
         <div class="stats__item">
-          <span class="stats__number" data-count="7">0</span><span class="stats__plus">+</span>
-          <p class="stats__label" data-i18n="stats.companies">Empresas<br>Atendidas</p>
+          <span class="stats__number" data-count="6">0</span><span class="stats__plus">+</span>
+          <p class="stats__label" data-i18n="stats.personal">Apps<br>Autorais</p>
         </div>
         <div class="stats__item">
           <span class="stats__number" data-count="6">0</span><span class="stats__plus">+</span>
@@ -159,72 +159,184 @@
         <button class="works__filter-btn" data-filter="mobile">Mobile</button>
         <button class="works__filter-btn" data-filter="web">Web</button>
         <button class="works__filter-btn" data-filter="api">API</button>
+        <button class="works__filter-btn" data-filter="fullstack" data-i18n="works.fullstack">Full Stack</button>
+        <button class="works__filter-btn" data-filter="iot">IoT</button>
       </div>
 
-      <div class="works__grid">
-        <div class="work-card" data-category="mobile">
-          <div class="work-card__content">
-            <span class="work-card__tag">Mobile</span>
-            <h3 class="work-card__title">Banco do Brasil Seguros</h3>
-            <p class="work-card__text" data-i18n="works.bb.text">App de seguros com React Native para o Banco do Brasil. Aumento significativo na venda de novos seguros e integração com WhatsApp via microsserviços em Go e Node.js.</p>
-            <div class="work-card__tech">
-              <span>React Native</span><span>Go</span><span>Node.js</span><span>TypeScript</span>
+      <!-- Personal / Authored Projects -->
+      <div class="works__group">
+        <h3 class="works__group-title" data-i18n="works.personal.title">Projetos Autorais</h3>
+        <p class="works__group-subtitle" data-i18n="works.personal.subtitle">Produtos próprios, do zero ao deploy — concepção, arquitetura e código.</p>
+
+        <div class="works__grid">
+          <div class="work-card" data-category="mobile fullstack iot">
+            <div class="work-card__media">
+              <img src="assets/img/projects/gomoveathome.png" alt="GO MOVE At Home" loading="lazy">
+            </div>
+            <div class="work-card__content">
+              <span class="work-card__tag">HealthTech · BLE</span>
+              <h3 class="work-card__title">GO MOVE At Home</h3>
+              <p class="work-card__text" data-i18n="works.gomove.text">Plataforma de monitoramento cardíaco para reabilitação cardiovascular domiciliar. BLE em background, alertas por voz, Live Activities iOS, modo offline e dashboard para clínicas.</p>
+              <div class="work-card__tech">
+                <span>Expo</span><span>NestJS</span><span>Bun</span><span>PostgreSQL</span><span>BLE</span>
+              </div>
+              <a href="https://gomoveathome.com" target="_blank" rel="noopener" class="work-card__link" data-i18n="works.visit">Visitar &rarr;</a>
+            </div>
+          </div>
+
+          <div class="work-card" data-category="mobile fullstack iot">
+            <div class="work-card__media">
+              <img src="assets/img/projects/cardiocow.png" alt="CardioCow" loading="lazy">
+            </div>
+            <div class="work-card__content">
+              <span class="work-card__tag">AgriTech · BLE</span>
+              <h3 class="work-card__title">CardioCow</h3>
+              <p class="work-card__text" data-i18n="works.cardiocow.text">Sistema de monitoramento fisiológico de bovinos com sensor BLE XOSS. Captura de batimentos, geolocalização e dados climáticos (INMET) com sincronização offline-first.</p>
+              <div class="work-card__tech">
+                <span>Expo</span><span>NestJS</span><span>Bun</span><span>React</span><span>SQLite</span>
+              </div>
+              <a href="https://cardiocow.app" target="_blank" rel="noopener" class="work-card__link" data-i18n="works.visit">Visitar &rarr;</a>
+            </div>
+          </div>
+
+          <div class="work-card" data-category="api mobile fullstack">
+            <div class="work-card__media">
+              <img src="assets/img/projects/safeo.png" alt="Safeo" loading="lazy">
+            </div>
+            <div class="work-card__content">
+              <span class="work-card__tag">GovTech · GIS</span>
+              <h3 class="work-card__title">Safeo</h3>
+              <p class="work-card__text" data-i18n="works.safeo.text">Índice de Segurança Urbana (0–10) por região do Brasil. Pipeline ETL de microdados públicos (ISP-RJ, SSP-SP, SINESP), geocodificação com PostGIS e API REST com score por raio.</p>
+              <div class="work-card__tech">
+                <span>Python</span><span>NestJS</span><span>PostGIS</span><span>Expo</span><span>Docker</span>
+              </div>
+              <div class="work-card__links">
+                <a href="https://safeo.com.br" target="_blank" rel="noopener" class="work-card__link" data-i18n="works.visit">Visitar &rarr;</a>
+                <a href="https://play.google.com/store/apps/details?id=br.com.safeo.app" target="_blank" rel="noopener" class="work-card__link work-card__link--store">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.609 1.814 13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734c0-.382.232-.713.61-.92zm10.89 10.893L17.026 10.18l3.197 1.748a1 1 0 0 1 0 1.749l-3.196 1.748-2.527-2.527zm-1.494 1.493L4.41 22.91l9.486-5.184-1.49-2.526zM4.41 1.092 13.005 9.7l1.49-2.527L4.412 1.09z"/></svg>
+                  Google Play
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="work-card" data-category="mobile web fullstack">
+            <div class="work-card__media">
+              <img src="assets/img/projects/raolog.png" alt="RAO LOG" loading="lazy">
+            </div>
+            <div class="work-card__content">
+              <span class="work-card__tag">LogTech</span>
+              <h3 class="work-card__title">RAO LOG</h3>
+              <p class="work-card__text" data-i18n="works.raolog.text">Plataforma de automação logística para empresa de coletas (~80/dia). Atribuição automática de rotas por geofencing, app do motorista, dashboard admin e formulário público para clientes.</p>
+              <div class="work-card__tech">
+                <span>NestJS</span><span>React</span><span>Vite</span><span>Expo</span><span>Google Maps</span>
+              </div>
+              <a href="https://raolog.com.br" target="_blank" rel="noopener" class="work-card__link" data-i18n="works.visit">Visitar &rarr;</a>
+            </div>
+          </div>
+
+          <div class="work-card" data-category="mobile web fullstack">
+            <div class="work-card__media">
+              <img src="assets/img/projects/arenaconnect.png" alt="ArenaConnect" loading="lazy">
+            </div>
+            <div class="work-card__content">
+              <span class="work-card__tag">SportTech · PWA</span>
+              <h3 class="work-card__title">ArenaConnect</h3>
+              <p class="work-card__text" data-i18n="works.arenaconnect.text">Marketplace PWA para reserva de quadras esportivas e matchmaking de atletas amadores. Busca geolocalizada, vagas abertas em tempo real e dashboard financeiro para gestores de arena.</p>
+              <div class="work-card__tech">
+                <span>Expo</span><span>Firebase</span><span>NativeWind</span><span>TypeScript</span>
+              </div>
+              <a href="https://arenaconnect.app" target="_blank" rel="noopener" class="work-card__link" data-i18n="works.visit">Visitar &rarr;</a>
+            </div>
+          </div>
+
+          <div class="work-card" data-category="mobile web fullstack">
+            <div class="work-card__media">
+              <img src="assets/img/projects/ellie.png" alt="Ellie" loading="lazy">
+            </div>
+            <div class="work-card__content">
+              <span class="work-card__tag">Social · IA</span>
+              <h3 class="work-card__title">Ellie</h3>
+              <p class="work-card__text" data-i18n="works.ellie.text">App de relacionamento para jovens cristãos. Discovery por localização e interesses, match-and-chat e moderação de fotos com Google Cloud Vision API. Foco em segurança (OWASP Top 10).</p>
+              <div class="work-card__tech">
+                <span>Expo</span><span>Firebase</span><span>Cloudinary</span><span>Cloud Vision</span>
+              </div>
+              <a href="https://ellieapp.com.br" target="_blank" rel="noopener" class="work-card__link" data-i18n="works.visit">Visitar &rarr;</a>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="work-card" data-category="web api">
-          <div class="work-card__content">
-            <span class="work-card__tag">Full Stack</span>
-            <h3 class="work-card__title">EnglishCraft</h3>
-            <p class="work-card__text" data-i18n="works.englishcraft.text">Plataforma de aprendizado de inglês com IPA, flashcards interativos e sistema freemium. App cross-platform + API escalável.</p>
-            <div class="work-card__tech">
-              <span>React Native</span><span>NestJS</span><span>PostgreSQL</span><span>Expo</span>
-            </div>
-            <a href="https://englishcraft.pro" target="_blank" rel="noopener" class="work-card__link" data-i18n="works.visit">Visitar &rarr;</a>
-          </div>
-        </div>
+      <!-- Corporate / Professional Experience -->
+      <div class="works__group">
+        <h3 class="works__group-title" data-i18n="works.corporate.title">Experiência Corporativa</h3>
+        <p class="works__group-subtitle" data-i18n="works.corporate.subtitle">Projetos entregues para grandes empresas, fintechs e startups.</p>
 
-        <div class="work-card" data-category="api">
-          <div class="work-card__content">
-            <span class="work-card__tag">API & IA</span>
-            <h3 class="work-card__title">AI Document Chat</h3>
-            <p class="work-card__text" data-i18n="works.aichat.text">API de chat com documentos usando IA. Upload de PDF/DOCX/áudio, busca semântica com RAG e integração com Google Gemini e Ollama.</p>
-            <div class="work-card__tech">
-              <span>Python</span><span>FastAPI</span><span>Qdrant</span><span>Docker</span>
+        <div class="works__grid">
+          <div class="work-card" data-category="mobile">
+            <div class="work-card__content">
+              <span class="work-card__tag">Mobile</span>
+              <h3 class="work-card__title">Banco do Brasil Seguros</h3>
+              <p class="work-card__text" data-i18n="works.bb.text">App de seguros com React Native para o Banco do Brasil. Aumento significativo na venda de novos seguros e integração com WhatsApp via microsserviços em Go e Node.js.</p>
+              <div class="work-card__tech">
+                <span>React Native</span><span>Go</span><span>Node.js</span><span>TypeScript</span>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="work-card" data-category="mobile">
-          <div class="work-card__content">
-            <span class="work-card__tag">Mobile</span>
-            <h3 class="work-card__title">Celler Bank</h3>
-            <p class="work-card__text" data-i18n="works.celler.text">App bancário com React Native para fintech. APIs com Azure Functions e camadas de segurança contra ataques MITM.</p>
-            <div class="work-card__tech">
-              <span>React Native</span><span>Node.js</span><span>Go</span><span>Azure</span>
+          <div class="work-card" data-category="web api fullstack">
+            <div class="work-card__content">
+              <span class="work-card__tag">Full Stack</span>
+              <h3 class="work-card__title">EnglishCraft</h3>
+              <p class="work-card__text" data-i18n="works.englishcraft.text">Plataforma de aprendizado de inglês com IPA, flashcards interativos e sistema freemium. App cross-platform + API escalável.</p>
+              <div class="work-card__tech">
+                <span>React Native</span><span>NestJS</span><span>PostgreSQL</span><span>Expo</span>
+              </div>
+              <a href="https://englishcraft.pro" target="_blank" rel="noopener" class="work-card__link" data-i18n="works.visit">Visitar &rarr;</a>
             </div>
           </div>
-        </div>
 
-        <div class="work-card" data-category="web">
-          <div class="work-card__content">
-            <span class="work-card__tag">Web</span>
-            <h3 class="work-card__title" data-i18n="works.chatbots.title">Chatbots Corporativos</h3>
-            <p class="work-card__text" data-i18n="works.chatbots.text">Chatbots para grandes empresas como Americanas e Canon. Otimização de atendimento ao cliente com integração via Ruby on Rails.</p>
-            <div class="work-card__tech">
-              <span>AIML</span><span>React</span><span>Ruby on Rails</span>
+          <div class="work-card" data-category="api">
+            <div class="work-card__content">
+              <span class="work-card__tag">API & IA</span>
+              <h3 class="work-card__title">AI Document Chat</h3>
+              <p class="work-card__text" data-i18n="works.aichat.text">API de chat com documentos usando IA. Upload de PDF/DOCX/áudio, busca semântica com RAG e integração com Google Gemini e Ollama.</p>
+              <div class="work-card__tech">
+                <span>Python</span><span>FastAPI</span><span>Qdrant</span><span>Docker</span>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="work-card" data-category="mobile web">
-          <div class="work-card__content">
-            <span class="work-card__tag">Fintech</span>
-            <h3 class="work-card__title">PagPop</h3>
-            <p class="work-card__text" data-i18n="works.pagpop.text">App e portal web para fintech. Acesso a extratos e transações bancárias via web com React e Vue.js + app React Native.</p>
-            <div class="work-card__tech">
-              <span>React Native</span><span>React</span><span>Vue.js</span>
+          <div class="work-card" data-category="mobile">
+            <div class="work-card__content">
+              <span class="work-card__tag">Mobile</span>
+              <h3 class="work-card__title">Celler Bank</h3>
+              <p class="work-card__text" data-i18n="works.celler.text">App bancário com React Native para fintech. APIs com Azure Functions e camadas de segurança contra ataques MITM.</p>
+              <div class="work-card__tech">
+                <span>React Native</span><span>Node.js</span><span>Go</span><span>Azure</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="work-card" data-category="web">
+            <div class="work-card__content">
+              <span class="work-card__tag">Web</span>
+              <h3 class="work-card__title" data-i18n="works.chatbots.title">Chatbots Corporativos</h3>
+              <p class="work-card__text" data-i18n="works.chatbots.text">Chatbots para grandes empresas como Americanas e Canon. Otimização de atendimento ao cliente com integração via Ruby on Rails.</p>
+              <div class="work-card__tech">
+                <span>AIML</span><span>React</span><span>Ruby on Rails</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="work-card" data-category="mobile web fullstack">
+            <div class="work-card__content">
+              <span class="work-card__tag">Fintech</span>
+              <h3 class="work-card__title">PagPop</h3>
+              <p class="work-card__text" data-i18n="works.pagpop.text">App e portal web para fintech. Acesso a extratos e transações bancárias via web com React e Vue.js + app React Native.</p>
+              <div class="work-card__tech">
+                <span>React Native</span><span>React</span><span>Vue.js</span>
+              </div>
             </div>
           </div>
         </div>
