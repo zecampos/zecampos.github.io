@@ -11,11 +11,12 @@ const translations = {
     // Hero
     'hero.phrases': [
       'Eu sou Jose Guilherme',
-      'Desenvolvedor Full Stack',
-      'Especialista Mobile',
-      'Bem-vindo ao meu portfólio'
+      'Product Engineer',
+      'Construo produtos com IA',
+      'Da ideia às lojas'
     ],
-    'hero.description': 'Desenvolvedor de software com mais de 9 anos de experiência em Front-End, Mobile e APIs. Especialista em criar soluções completas — do app ao servidor — para startups e grandes empresas.',
+    'hero.description': 'Engenheiro de produto com mais de 9 anos de experiência. Levo ideias do PRD à produção — arquitetura, código, lojas, monetização e lançamento — usando IA como multiplicador de entrega.',
+    'hero.cvHref': 'assets/cv_jose_campos.pdf',
     'hero.downloadCv': 'Download CV',
     'hero.myProjects': 'Meus Projetos',
 
@@ -24,19 +25,19 @@ const translations = {
     'stats.projects': 'Projetos<br>Entregues',
     'stats.companies': 'Empresas<br>Atendidas',
     'stats.personal': 'Apps<br>Autorais',
-    'stats.reactNative': 'Anos em<br>React Native',
+    'stats.products2026': 'Produtos<br>em 2026',
 
     // Services
-    'services.title': 'Meus <span class="text-gradient">Serviços</span>',
-    'services.subtitle': 'Soluções completas em desenvolvimento de software para web, mobile e backend.',
-    'services.mobile.title': 'Desenvolvimento Mobile',
-    'services.mobile.text': 'Apps iOS e Android com React Native e Expo. Publicação nas lojas, performance otimizada e experiência nativa.',
-    'services.web.title': 'Desenvolvimento Web',
-    'services.web.text': 'SPAs e aplicações web modernas com React, Next.js, Angular e Vue.js. Interfaces responsivas e performáticas.',
-    'services.api.title': 'APIs & Backend',
-    'services.api.text': 'APIs robustas com Node.js, NestJS, FastAPI e Go. Arquitetura escalável, microsserviços e integração com IA.',
-    'services.devops.title': 'DevOps & Deploy',
-    'services.devops.text': 'Docker, CI/CD, configuração de servidores. Deploy em AWS, GCP, Azure, Digital Ocean e plataformas serverless.',
+    'services.title': 'Como <span class="text-gradient">Entrego</span>',
+    'services.subtitle': 'Do problema ao produto no ar — com IA acelerando cada etapa.',
+    'services.product.title': 'Produto de Ponta a Ponta',
+    'services.product.text': 'PRD, design, desenvolvimento, publicação nas lojas, assinaturas, funil de onboarding e lançamento. Um único responsável do zero ao faturamento.',
+    'services.ai.title': 'Desenvolvimento com IA',
+    'services.ai.text': 'Fluxo agêntico com Claude Code e MCP, planejamento por fases com critérios verificáveis e testes automatizados: velocidade de time com qualidade de produção.',
+    'services.mobile.title': 'Apps Mobile & Nativos',
+    'services.mobile.text': 'React Native/Expo, SwiftUI e Kotlin/Compose. Áudio em tempo real em C++, BLE, offline-first e publicação nas lojas.',
+    'services.api.title': 'APIs, IA & Cloud',
+    'services.api.text': 'Node.js/Bun, NestJS, FastAPI e Go. RAG e LLMs, arquitetura multi-tenant, segurança e deploy em AWS, GCP e Firebase.',
 
     // Works
     'works.title': 'Projetos <span class="text-gradient">Recentes</span>',
@@ -61,10 +62,17 @@ const translations = {
     'works.chatbots.title': 'Chatbots Corporativos',
     'works.chatbots.text': 'Chatbots para grandes empresas como Americanas e Canon. Otimização de atendimento ao cliente com integração via Ruby on Rails.',
     'works.pagpop.text': 'App e portal web para fintech. Acesso a extratos e transações bancárias via web com React e Vue.js + app React Native.',
+    'works.bassrig.text': 'Pedalboard de baixo no celular com ~6 ms de latência: drive, compressor, EQ, amps neurais NAM, cabinets por IR e synth. Engine de áudio em C++ compartilhada entre Android (Oboe) e iOS (AVAudioEngine). Assinatura no Google Play.',
+    'works.keysrig.text': 'Teclado de palco para iPad e Android: até 6 layers por patch, splits, pads contínuos, arpejador, reverb com shimmer, MIDI learn e importação de instrumentos SFZ/SF2.',
+    'works.sendme.text': 'App que conecta missionários a apoiadores e igrejas: orar, ajudar via PIX e se voluntariar. Monorepo com app, painel admin e 23 Cloud Functions; ~170 arquivos de teste e CI.',
+    'works.prophub.text': 'Plataforma white-label multi-tenant de prop trading. Rotação de chaves de criptografia, isolamento entre tenants, refactor do OMS, redução de carga no RDS e testes de carga k6.',
+    'works.meta.text': 'Site institucional para consultoria industrial: design system, layout desktop/mobile, blog em Markdown, SEO/AEO e deploy na Vercel.',
+    'works.meta.tag': 'Web · Freelance',
 
     // Experience
     'experience.title': 'Minha <span class="text-gradient">Experiência</span>',
-    'experience.freelance.date': '2024 - Presente',
+    'experience.freelance.date': '2024 - 2025',
+    'experience.prophub.date': '06/2026 - Presente',
     'experience.ilia.company': 'Ília, Brasília - Remoto',
     'experience.celler.company': 'Celler, São Paulo - Remoto',
     'experience.wt9.company': 'WT9, São Paulo - Remoto',
@@ -105,11 +113,12 @@ const translations = {
 
     'hero.phrases': [
       "I'm Jose Guilherme",
-      'Full Stack Developer',
-      'Mobile Specialist',
-      'Welcome to my portfolio'
+      'Product Engineer',
+      'I build products with AI',
+      'From idea to app stores'
     ],
-    'hero.description': 'Software developer with 9+ years of experience in Front-End, Mobile, and APIs. Specialist in building complete solutions — from app to server — for startups and enterprises.',
+    'hero.description': 'Product engineer with 9+ years of experience. I take ideas from PRD to production — architecture, code, app stores, monetization, and launch — using AI as a delivery multiplier.',
+    'hero.cvHref': 'assets/cv_jose_campos_en.pdf',
     'hero.downloadCv': 'Download CV',
     'hero.myProjects': 'My Projects',
 
@@ -117,18 +126,18 @@ const translations = {
     'stats.projects': 'Projects<br>Delivered',
     'stats.companies': 'Companies<br>Served',
     'stats.personal': 'Authored<br>Apps',
-    'stats.reactNative': 'Years with<br>React Native',
+    'stats.products2026': 'Products<br>in 2026',
 
-    'services.title': 'My <span class="text-gradient">Services</span>',
-    'services.subtitle': 'Complete software development solutions for web, mobile, and backend.',
-    'services.mobile.title': 'Mobile Development',
-    'services.mobile.text': 'iOS and Android apps with React Native and Expo. Store publishing, optimized performance, and native experience.',
-    'services.web.title': 'Web Development',
-    'services.web.text': 'Modern SPAs and web applications with React, Next.js, Angular, and Vue.js. Responsive and high-performance interfaces.',
-    'services.api.title': 'APIs & Backend',
-    'services.api.text': 'Robust APIs with Node.js, NestJS, FastAPI, and Go. Scalable architecture, microservices, and AI integration.',
-    'services.devops.title': 'DevOps & Deploy',
-    'services.devops.text': 'Docker, CI/CD, server configuration. Deploy on AWS, GCP, Azure, Digital Ocean, and serverless platforms.',
+    'services.title': 'How I <span class="text-gradient">Deliver</span>',
+    'services.subtitle': 'From problem to shipped product — with AI accelerating every step.',
+    'services.product.title': 'End-to-End Product',
+    'services.product.text': 'PRD, design, development, app store release, subscriptions, onboarding funnel, and launch. One owner from zero to revenue.',
+    'services.ai.title': 'AI-Native Development',
+    'services.ai.text': 'Agentic workflow with Claude Code and MCP, phased planning with verifiable criteria, and automated tests: team-level speed with production quality.',
+    'services.mobile.title': 'Mobile & Native Apps',
+    'services.mobile.text': 'React Native/Expo, SwiftUI, and Kotlin/Compose. Real-time audio in C++, BLE, offline-first, and app store publishing.',
+    'services.api.title': 'APIs, AI & Cloud',
+    'services.api.text': 'Node.js/Bun, NestJS, FastAPI, and Go. RAG and LLMs, multi-tenant architecture, security, and deploys on AWS, GCP, and Firebase.',
 
     'works.title': 'Recent <span class="text-gradient">Projects</span>',
     'works.subtitle': 'My own products and projects delivered for major companies.',
@@ -152,9 +161,16 @@ const translations = {
     'works.chatbots.title': 'Corporate Chatbots',
     'works.chatbots.text': 'Chatbots for large companies like Americanas and Canon. Customer service optimization with Ruby on Rails integration.',
     'works.pagpop.text': 'Fintech app and web portal. Bank statements and transactions via web with React and Vue.js + React Native app.',
+    'works.bassrig.text': 'Bass pedalboard on your phone with ~6 ms latency: drive, compressor, EQ, NAM neural amps, IR cabinets, and synth. C++ audio engine shared between Android (Oboe) and iOS (AVAudioEngine). Subscription on Google Play.',
+    'works.keysrig.text': 'Stage keyboard for iPad and Android: up to 6 layers per patch, splits, continuous pads, arpeggiator, shimmer reverb, MIDI learn, and SFZ/SF2 instrument import.',
+    'works.sendme.text': 'App connecting missionaries with supporters and churches: pray, give via PIX, and volunteer. Monorepo with app, admin panel, and 23 Cloud Functions; ~170 test files and CI.',
+    'works.prophub.text': 'White-label multi-tenant prop trading platform. Encryption key rotation, tenant isolation, OMS refactor, RDS load reduction, and k6 load testing.',
+    'works.meta.text': 'Corporate website for an industrial consultancy: design system, desktop/mobile layouts, Markdown blog, SEO/AEO, and Vercel deploy.',
+    'works.meta.tag': 'Web · Freelance',
 
     'experience.title': 'My <span class="text-gradient">Experience</span>',
-    'experience.freelance.date': '2024 - Present',
+    'experience.freelance.date': '2024 - 2025',
+    'experience.prophub.date': '06/2026 - Present',
     'experience.ilia.company': 'Ília, Brasília - Remote',
     'experience.celler.company': 'Celler, São Paulo - Remote',
     'experience.wt9.company': 'WT9, São Paulo - Remote',
@@ -191,11 +207,12 @@ const translations = {
 
     'hero.phrases': [
       'Soy Jose Guilherme',
-      'Desarrollador Full Stack',
-      'Especialista Mobile',
-      'Bienvenido a mi portafolio'
+      'Product Engineer',
+      'Construyo productos con IA',
+      'De la idea a las tiendas'
     ],
-    'hero.description': 'Desarrollador de software con más de 9 años de experiencia en Front-End, Mobile y APIs. Especialista en crear soluciones completas — de la app al servidor — para startups y grandes empresas.',
+    'hero.description': 'Ingeniero de producto con más de 9 años de experiencia. Llevo ideas del PRD a producción — arquitectura, código, tiendas, monetización y lanzamiento — usando la IA como multiplicador de entrega.',
+    'hero.cvHref': 'assets/cv_jose_campos_es.pdf',
     'hero.downloadCv': 'Descargar CV',
     'hero.myProjects': 'Mis Proyectos',
 
@@ -203,18 +220,18 @@ const translations = {
     'stats.projects': 'Proyectos<br>Entregados',
     'stats.companies': 'Empresas<br>Atendidas',
     'stats.personal': 'Apps<br>Propias',
-    'stats.reactNative': 'Años con<br>React Native',
+    'stats.products2026': 'Productos<br>en 2026',
 
-    'services.title': 'Mis <span class="text-gradient">Servicios</span>',
-    'services.subtitle': 'Soluciones completas en desarrollo de software para web, mobile y backend.',
-    'services.mobile.title': 'Desarrollo Mobile',
-    'services.mobile.text': 'Apps iOS y Android con React Native y Expo. Publicación en tiendas, rendimiento optimizado y experiencia nativa.',
-    'services.web.title': 'Desarrollo Web',
-    'services.web.text': 'SPAs y aplicaciones web modernas con React, Next.js, Angular y Vue.js. Interfaces responsivas y de alto rendimiento.',
-    'services.api.title': 'APIs & Backend',
-    'services.api.text': 'APIs robustas con Node.js, NestJS, FastAPI y Go. Arquitectura escalable, microservicios e integración con IA.',
-    'services.devops.title': 'DevOps & Deploy',
-    'services.devops.text': 'Docker, CI/CD, configuración de servidores. Deploy en AWS, GCP, Azure, Digital Ocean y plataformas serverless.',
+    'services.title': 'Cómo <span class="text-gradient">Entrego</span>',
+    'services.subtitle': 'Del problema al producto en producción — con IA acelerando cada etapa.',
+    'services.product.title': 'Producto de Punta a Punta',
+    'services.product.text': 'PRD, diseño, desarrollo, publicación en tiendas, suscripciones, embudo de onboarding y lanzamiento. Un solo responsable de cero a la facturación.',
+    'services.ai.title': 'Desarrollo con IA',
+    'services.ai.text': 'Flujo agéntico con Claude Code y MCP, planificación por fases con criterios verificables y pruebas automatizadas: velocidad de equipo con calidad de producción.',
+    'services.mobile.title': 'Apps Mobile y Nativas',
+    'services.mobile.text': 'React Native/Expo, SwiftUI y Kotlin/Compose. Audio en tiempo real en C++, BLE, offline-first y publicación en tiendas.',
+    'services.api.title': 'APIs, IA y Cloud',
+    'services.api.text': 'Node.js/Bun, NestJS, FastAPI y Go. RAG y LLMs, arquitectura multi-tenant, seguridad y deploy en AWS, GCP y Firebase.',
 
     'works.title': 'Proyectos <span class="text-gradient">Recientes</span>',
     'works.subtitle': 'Productos propios y proyectos entregados para grandes empresas.',
@@ -238,9 +255,16 @@ const translations = {
     'works.chatbots.title': 'Chatbots Corporativos',
     'works.chatbots.text': 'Chatbots para grandes empresas como Americanas y Canon. Optimización de atención al cliente con integración vía Ruby on Rails.',
     'works.pagpop.text': 'App y portal web para fintech. Acceso a extractos y transacciones bancarias vía web con React y Vue.js + app React Native.',
+    'works.bassrig.text': 'Pedalera de bajo en el celular con ~6 ms de latencia: drive, compresor, EQ, amplificadores neuronales NAM, gabinetes por IR y synth. Motor de audio en C++ compartido entre Android (Oboe) e iOS (AVAudioEngine). Suscripción en Google Play.',
+    'works.keysrig.text': 'Teclado de escenario para iPad y Android: hasta 6 capas por patch, splits, pads continuos, arpegiador, reverb con shimmer, MIDI learn e importación de instrumentos SFZ/SF2.',
+    'works.sendme.text': 'App que conecta misioneros con donantes e iglesias: orar, ayudar vía PIX y ser voluntario. Monorepo con app, panel admin y 23 Cloud Functions; ~170 archivos de prueba y CI.',
+    'works.prophub.text': 'Plataforma white-label multi-tenant de prop trading. Rotación de claves de cifrado, aislamiento entre tenants, refactor del OMS, reducción de carga en RDS y pruebas de carga k6.',
+    'works.meta.text': 'Sitio institucional para consultoría industrial: design system, layouts desktop/mobile, blog en Markdown, SEO/AEO y deploy en Vercel.',
+    'works.meta.tag': 'Web · Freelance',
 
     'experience.title': 'Mi <span class="text-gradient">Experiencia</span>',
-    'experience.freelance.date': '2024 - Presente',
+    'experience.freelance.date': '2024 - 2025',
+    'experience.prophub.date': '06/2026 - Presente',
     'experience.ilia.company': 'Ília, Brasília - Remoto',
     'experience.celler.company': 'Celler, São Paulo - Remoto',
     'experience.wt9.company': 'WT9, São Paulo - Remoto',
@@ -286,6 +310,13 @@ function setLanguage(lang) {
       } else {
         el.innerHTML = t[key];
       }
+    }
+  });
+
+  document.querySelectorAll('[data-i18n-href]').forEach(el => {
+    const key = el.getAttribute('data-i18n-href');
+    if (t[key]) {
+      el.href = t[key];
     }
   });
 
