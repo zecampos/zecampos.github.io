@@ -68,7 +68,7 @@ Plataforma white-label multi-tenant de prop trading (desafíos de evaluación, c
 - **Stack:** Python, FastAPI, PostgreSQL, Qdrant, Docker, Pytest, Alembic.
 
 ### Desarrollador Backend y Mobile — Ília (Remoto)
-**Feb/2022 – Dic/2025** | *Cliente principal: Banco do Brasil Seguros*
+**Feb/2022 – Ene/2026** | *Cliente principal: Banco do Brasil Seguros*
 
 - Diseñé y desarrollé **microservicios en Go y Node.js** para integración con WhatsApp vía Meta API, habilitando la venta de seguros por canales conversacionales.
 - Lideré la evolución de la app móvil de seguros del Banco do Brasil en **React Native**, contribuyendo a un aumento medible en la venta de nuevos seguros.
@@ -94,12 +94,12 @@ Plataforma white-label multi-tenant de prop trading (desafíos de evaluación, c
 - Chatbots AIML para grandes minoristas (**Americanas, Canon**) y API en Ruby on Rails para integración.
 
 ### Desarrollador de Software — DuoDev (Remoto)
-**Dic/2018 – Jul/2021**
+**Dic/2018 – Jun/2020**
 
 - Apps React Native, React, Angular y Vue.js y APIs Node.js para múltiples clientes en etapa inicial (HealthTech, marketplace de estacionamientos).
 
 ### Desarrollador de Software — PagPop (Fintech, Ribeirão Preto)
-**Sep/2017 – Dic/2018**
+**Nov/2017 – Dic/2018**
 
 - App React Native y portales React/Vue.js para la experiencia bancaria; MySQL como base transaccional.
 
@@ -142,7 +142,7 @@ NestJS + React Native + Python — englishcraft.pro
 
 ## EDUCACIÓN
 
-**Análisis y Desarrollo de Sistemas** — Estácio, São Paulo (2016)
+**Análisis y Desarrollo de Sistemas** (no concluido) — Estácio, São Paulo (2017–2020)
 **Administración de Empresas** — Centro Universitário Moura Lacerda, São Paulo (2008–2012)
 
 ---

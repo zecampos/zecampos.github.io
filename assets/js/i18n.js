@@ -81,7 +81,7 @@ const translations = {
 
     // Education
     'education.title': 'Minha <span class="text-gradient">Formação</span>',
-    'education.ads': 'Análise e Desenvolvimento de Sistemas',
+    'education.ads': 'Análise e Desenvolvimento de Sistemas (não concluído)',
     'education.admin': 'Administração de Empresas',
     'education.certification': 'Certificação',
 
@@ -178,7 +178,7 @@ const translations = {
     'experience.duodev.company': 'DuoDev, São Paulo - Remote',
 
     'education.title': 'My <span class="text-gradient">Education</span>',
-    'education.ads': 'Systems Analysis and Development',
+    'education.ads': 'Systems Analysis and Development (not completed)',
     'education.admin': 'Business Administration',
     'education.certification': 'Certification',
 
@@ -272,7 +272,7 @@ const translations = {
     'experience.duodev.company': 'DuoDev, São Paulo - Remoto',
 
     'education.title': 'Mi <span class="text-gradient">Formación</span>',
-    'education.ads': 'Análisis y Desarrollo de Sistemas',
+    'education.ads': 'Análisis y Desarrollo de Sistemas (no concluido)',
     'education.admin': 'Administración de Empresas',
     'education.certification': 'Certificación',
 
