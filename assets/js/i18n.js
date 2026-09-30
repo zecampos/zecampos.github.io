@@ -100,6 +100,8 @@ const translations = {
     'contact.form.send': 'Enviar Mensagem',
 
     // Footer
+    'nav.business': 'Empresas',
+
     'footer.copy': '&copy; 2026 Jose Guilherme Campos. Todos os direitos reservados.',
   },
 
@@ -194,6 +196,8 @@ const translations = {
     'contact.form.message': 'Your message',
     'contact.form.send': 'Send Message',
 
+    'nav.business': 'For business',
+
     'footer.copy': '&copy; 2026 Jose Guilherme Campos. All rights reserved.',
   },
 
@@ -287,6 +291,8 @@ const translations = {
     'contact.form.subject': 'Asunto',
     'contact.form.message': 'Tu mensaje',
     'contact.form.send': 'Enviar Mensaje',
+
+    'nav.business': 'Empresas',
 
     'footer.copy': '&copy; 2026 Jose Guilherme Campos. Todos los derechos reservados.',
   }
